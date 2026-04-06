@@ -1,0 +1,107 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+/* configuraciones generales */
+
+@font-face {
+    font-family: "EncodeSans Light";
+    src: url("fonts/EncodeSans-Light.ttf") format("truetype");
+    font-weight: 200;
+    font-style: light;
+}
+
+@font-face {
+    font-family: "EncodeSans Regular";
+    src: url("fonts/EncodeSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Medium";
+    src: url("fonts/EncodeSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Semibold";
+    src: url("fonts/EncodeSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Bold";
+    src: url("fonts/EncodeSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* fondo */
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+
+/* titulos*/
+
+h1, h2, h3 {
+    color: rgb(243, 165, 187);
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'EncodeSans-Bold', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'EncodeSans Semibold', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+h3 {
+    font-family: 'EncodeSans Semibold', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: none;
+    margin-top: 0;
+}
+
+
+/* textos */
+
+p {
+    font-family: 'EncodeSans Regular', sans-serif;
+    color: rgb(243, 165, 187);
+    text-align: center;
+    margin: 20;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    padding: 0;
+    color: rgb(243, 165, 187);
+}
+
+li {
+    font-family: 'EncodeSans Regular', sans-serif;
+    margin: 5px 0;
+}
+
+
+/* bloques */
+
+.bloque1, .bloque2, .bloque3 {
+    padding: 40px 20px;
+}
