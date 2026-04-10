@@ -1,7 +1,9 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
-/* configuraciones generales */
+/* hola profes, luego de ver los videos de flexbox entendí un poco más la estructura de la página así que decidí realizar unos cambios. En primer lugar incorporé mi nombre de diseñadora y en base a eso intenté plantear un mejor orden de la página y la estructura del html ya que la primer prueba me parecía super mega básica y no estaba para nada organizada. Tengo dudas de algunas cosas, incorporé la etiqueta <span> para cambiar las variables en algunas palbras. Esto no sé si está correcto semánticamente. También cambié la foto y agregué un bloque mas de texto en experiencia. Mi idea es que los bloques en rosa con la experienica, se ubiquen dos arriba y dos abajo, eso aún no sé como hacerlo. También hice que la palabra "experiencia" se repita varias veces en una misma línea. Perdón, mucho texto jaja. Solo quería dejar esas aclaraciones, saluditos!*/
+
+/* fuentes */
 
 @font-face {
     font-family: "EncodeSans Light";
@@ -38,70 +40,202 @@
     font-style: normal;
 }
 
+/* configuraciones generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* fondo */
 
 body {
     background-color: black;
-    margin: 0;
+    color: rgb(243, 165, 187);
+    font-family: 'EncodeSans Regular';
 }
 
 
-/* titulos*/
+/* header*/
 
-h1, h2, h3 {
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 170px;
+}
+
+/* loguito pintha */
+.logopintha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logopintha img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.presentación {
+    flex: 1;
+    min-width: 300px;
+    font-size: 16px;
+}
+
+.datoseduación {
+    min-width: 250px;
+}
+
+.datoseduación h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'EncodeSans Bold';
+}
+
+.datoseduación p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*  nav */
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(243, 165, 187);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* hero */
+.hero h1 {
+    background-color: rgb(243, 165, 187);
+    color: black;
+    padding: 80px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bold {
+    font-family: 'EncodeSans Bold';
+}
+
+.light {
+    font-family: 'EncodeSans Light';
+}
+
+.nombre {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+.cajitanombre {
+    background-color: rgb(243, 165, 187);
+    padding: 20px;
+    min-width: 200px;
+}
+
+.cajitanombre p {
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.nombre img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.presentación {
+    flex: 1;
+    min-width: 300px;
+    font-size: 16px;
+}
+
+.datoseduación {
+    min-width: 250px;
+}
+
+.datoshabilidades {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'EncodeSans Bold';
+}
+
+.experiencias h2 {
+    width: 100%;
+    background-color: black;
     color: rgb(243, 165, 187);
     text-align: center;
-    margin: 0;
+    text-transform: uppercase;
+    padding: 20px;
+    border-top: 2px solid rgb(243, 165, 187);
+    border-bottom: 2px solid rgb(243, 165, 187);
+    margin-bottom: 40px;
+    font-size: 30px;
 }
 
-h1 {
-    font-family: 'EncodeSans-Bold', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.experiencias {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 40px;
+    justify-content: left;
+    gap: 20px;
 }
 
-h2 {
-    font-family: 'EncodeSans Semibold', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 40px;
+.experiencias article {
+    background-color: rgb(243, 165, 187);
+    color: black;
+    padding: 30px;
+    min-width: 300px;
+    min-height: 250px;
 }
 
-h3 {
-    font-family: 'EncodeSans Semibold', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: none;
-    margin-top: 0;
+.experiencias h3 {
+    font-family: 'EncodeSans Bold';
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
-
-/* textos */
-
-p {
-    font-family: 'EncodeSans Regular', sans-serif;
-    color: rgb(243, 165, 187);
-    text-align: center;
-    margin: 20;
+.experiencias li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
-
-ul {
-    text-align: center;
-    list-style-position: inside;
-    padding: 0;
-    color: rgb(243, 165, 187);
-}
-
-li {
-    font-family: 'EncodeSans Regular', sans-serif;
-    margin: 5px 0;
-}
-
 
 /* bloques */
-
-.bloque1, .bloque2, .bloque3 {
+.bloque1,
+.bloque2,
+.bloque3,
+.bloque4 {
     padding: 40px 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(243, 165, 187);
+    color: black;
+    padding: 30px;
 }
