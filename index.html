@@ -4,21 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>Agustina Quiroga</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css"> <!-- acá falta un atributo -->
 </head>
 
 <body>
     <header>
         <div class="logopintha">
             <img src="img/logo pintha.png" alt="Logo Pintha" width="12px" height="12px">
-            <p>
+            <p> <!-- los nombres de los archivos no pueden llevar espacios!!! -->
                 <span class="light">AGUS</span>
                 <span class="bold">PINTHA</span>
             </p>
         </div>
         <nav>
             <ul>
-                <li><a href="#">INICIO</a></li>
+                <li><a href="#">INICIO</a></li> <!-- en lugar de hacer un camino tan largo te conviene directamente dentro del nav poner las etiquetas a, así no es tan choclazo el código -->
                 <li><a href="#">SOBRE MÍ</a></li>
                 <li><a href="#">PROYECTOS</a></li>
             </ul>
@@ -43,7 +43,7 @@
             <img src="img/agus_quiroga.jpg" alt="fotodeAgusQuiroga" width="200" height="220" />
 
             <!--PRESENTACIÓN-->
-            <div class="presentación">
+            <div class="presentación"> <!--si este div va a contener un solo elemento hay que justificar el por qué, sino son etiquetas de más. Además, hay una etiqueta con mejor semántica para encerrar un párrafo. La desición la tomás vos-->
                 <p>¡Hola! Me llamo Agustina.
                     Soy estudiante avanzada de la Licenciatura en Diseño y Comunicación Visual de la Universidad
                     Nacional de
@@ -58,6 +58,7 @@
             </div>
 
             <!--Primera categoría de descripciones que van a la derecha-->
+            <!--esta parte al ser tan chiquita te conviene dejarla en columna, además podrías repensar toda la sección como listas. como dato, un li puede tener otras listas o etiquetas de texto/imagen dentro-->
             <div class="datoseducación">
                 <h2>EDUCACIÓN</h2>
                 <p>Lic. Diseño y Comunicación Visual (2021–Presente)</p>
@@ -75,7 +76,7 @@
         </section>
 
         <section class="experiencias">
-            <h2>Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*</h2>
+            <h2>Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*</h2> <!--cuando veamos animaciones esto te va a servir mucho, lo que sí, tratá esta parte como un grupo de varias palabras así te queda una section con dos hijos: el de los h2 (ancho al 100%) y el article (con otro ancho). Al article en específico aplicale un max-width para que el ancho sea de lo máximo que ocupan dos bloques, y todo lo que es flex aplicarlo acá y no a la section.-->
             <article class="bloque1">
                 <h3>Diseñadora gráfica freelance</h3>
                 <ul>
@@ -126,7 +127,7 @@
     </main>
     <!--Acá va un footer-->
     <footer>
-        <p>BEHANCE</p>
+        <p>BEHANCE</p>  <!--mirate el último video que compartimos por campus virtual sobre etiquetas a para hacer links a páginas externas para que esto funcione -->
         <p>INSTAGRAM</p>
         <p>LINKEDIN</p>
     </footer>

@@ -1,7 +1,7 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
-/* hola profes, luego de ver los videos de flexbox entendí un poco más la estructura de la página así que decidí realizar unos cambios. En primer lugar incorporé mi nombre de diseñadora y en base a eso intenté plantear un mejor orden de la página y la estructura del html ya que la primer prueba me parecía super mega básica y no estaba para nada organizada. Tengo dudas de algunas cosas, incorporé la etiqueta <span> para cambiar las variables en algunas palbras. Esto no sé si está correcto semánticamente. También cambié la foto y agregué un bloque mas de texto en experiencia. Mi idea es que los bloques en rosa con la experienica, se ubiquen dos arriba y dos abajo, eso aún no sé como hacerlo. También hice que la palabra "experiencia" se repita varias veces en una misma línea. Perdón, mucho texto jaja. Solo quería dejar esas aclaraciones, saluditos!*/
+/* sobre las etiquetas <span> está perfecto */
 
 /* fuentes */
 
@@ -63,7 +63,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
-    background-color: black;
+    background-color: black; /* no hace falta aplicar */
     margin-top: 20px;
 }
 
@@ -79,7 +79,7 @@ header {
 }
 
 .logopintha img {
-    width: 22px;
+    width: 22px; /* las propiedades de esta imagen ya están aplicadas en el html, si tenés que modificarlo hacelo desde allá */
     height: 22px;
 
 }
@@ -228,7 +228,7 @@ nav a {
 .bloque3,
 .bloque4 {
     padding: 40px 20px;
-}
+} /* estas propiedades no están funcionando, además ya las declaraste en la línea 205, no repitas propiedades en los mismos elementos aunque estos tengan distintos selectores */
 
 footer {
     display: flex;
