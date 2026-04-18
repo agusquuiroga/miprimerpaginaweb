@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Agustina Quiroga</title>
-    <link rel="stylesheet" href="estilos.css"> <!-- acá falta un atributo -->
+    <title>AGUS PINTHA</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/logopintha.png" type="image/png">
 </head>
 
 <body>
     <header>
         <div class="logopintha">
-            <img src="img/logo pintha.png" alt="Logo Pintha" width="12px" height="12px">
-            <p> <!-- los nombres de los archivos no pueden llevar espacios!!! -->
+            <img src="img/logopintha.png" alt="Logo Pintha" width="22px" height="22px">
+            <p>
                 <span class="light">AGUS</span>
                 <span class="bold">PINTHA</span>
             </p>
@@ -36,100 +37,109 @@
         <!--MI NOMBRE REAL Y ARTÍSTICO-->
 
         <section class="nombre">
-            <div class="cajitanombre">
-                <p><span class="light">AGUS</span> <span class="bold">PINTHA</span></p>
-                <p><span class="bold">AGUS</span> <span class="light">QUIROGA</span></p>
-            </div>
-            <img src="img/agus_quiroga.jpg" alt="fotodeAgusQuiroga" width="200" height="220" />
+            <div class="columnainfoprincipal">
+                <div class="cajitanombre">
+                    <p><span class="light">AGUS</span> <span class="bold">PINTHA</span></p>
+                    <p><span class="bold">AGUS</span> <span class="light">QUIROGA</span></p>
+                </div>
+                <img src="img/agus_quiroga.jpg" alt="fotodeAgusQuiroga" width="200" height="220" />
 
-            <!--PRESENTACIÓN-->
-            <div class="presentación"> <!--si este div va a contener un solo elemento hay que justificar el por qué, sino son etiquetas de más. Además, hay una etiqueta con mejor semántica para encerrar un párrafo. La desición la tomás vos-->
-                <p>¡Hola! Me llamo Agustina.
-                    Soy estudiante avanzada de la Licenciatura en Diseño y Comunicación Visual de la Universidad
-                    Nacional de
-                    Lanús, encontrándome en el último tramo de la carrera.
-                    Me considero una apasionada del diseño y de los procesos creativos, disfruto mucho ver como un
-                    simple
-                    boceto puede tomar vida y convertirse en algo súper interesante. Dentro de esta hermosa disciplina,
-                    disfruto mucho realizar proyectos editoriales donde puedo indagar por diversos enfoques
-                    tipográficos.
-                    También, en mis tiempos libres dibujo y pinto.
-                </p>
+                <!--PRESENTACIÓN-->
+                <div class="presentación">
+                    <p>¡Hola! Me llamo Agustina Quiroga.
+                        Soy estudiante avanzada de la Licenciatura en Diseño y Comunicación Visual de la Universidad
+                        Nacional de
+                        Lanús, encontrándome en el último tramo de la carrera.
+                        Me considero una apasionada del diseño y de los procesos creativos, disfruto mucho ver como un
+                        simple
+                        boceto puede tomar vida y convertirse en algo súper interesante. Dentro de esta hermosa
+                        disciplina,
+                        disfruto mucho realizar proyectos editoriales donde puedo indagar por diversos enfoques
+                        tipográficos.
+                        También, en mis tiempos libres, dibujo y pinto.
+                    </p>
+                </div>
             </div>
 
             <!--Primera categoría de descripciones que van a la derecha-->
-            <!--esta parte al ser tan chiquita te conviene dejarla en columna, además podrías repensar toda la sección como listas. como dato, un li puede tener otras listas o etiquetas de texto/imagen dentro-->
-            <div class="datoseducación">
-                <h2>EDUCACIÓN</h2>
-                <p>Lic. Diseño y Comunicación Visual (2021–Presente)</p>
-                <p>Bachiller en Economía y Gestión (2015–2020)</p>
-            </div>
+            <div class="columnadatosedu">
+                <div class="datoseducación">
+                    <h2>EDUCACIÓN</h2>
+                    <p>Lic. Diseño y Comunicación Visual (2021–Presente)</p>
+                    <p>Bachiller en Economía y Gestión (2015–2020)</p>
+                </div>
 
-            <div class="datoshabilidades">
-                <h2>HABILIDADES</h2>
-                <p>Ai</p>
-                <p>Ps</p>
-                <p>Id</p>
-                <p>Lr</p>
+                <div class="iconosadobe">
+                    <h2>HABILIDADES</h2>
+                    <span>Ai</span>
+                    <span>Ps</span>
+                    <span>Id</span>
+                    <span>Lr</span>
+                </div>
             </div>
 
         </section>
 
         <section class="experiencias">
-            <h2>Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*Experiencia*</h2> <!--cuando veamos animaciones esto te va a servir mucho, lo que sí, tratá esta parte como un grupo de varias palabras así te queda una section con dos hijos: el de los h2 (ancho al 100%) y el article (con otro ancho). Al article en específico aplicale un max-width para que el ancho sea de lo máximo que ocupan dos bloques, y todo lo que es flex aplicarlo acá y no a la section.-->
-            <article class="bloque1">
-                <h3>Diseñadora gráfica freelance</h3>
-                <ul>
-                    <li>Diseño editorial (piezas gráficas, material impreso)</li>
-                    <li>Desarrollo y conceptualización de identidades visuales</li>
-                    <li>Diseño de packaging y aplicaciones de marca</li>
-                    <li>Adaptación de piezas para soportes digitales y gráficos</li>
-                    <li>Trabajo directo con clientes y seguimiento de proyecto</li>
-                </ul>
-            </article>
+            <h2> *EXPERIENCIA*EXPERIENCIA*EXPERIENCIA*EXPERIENCIA*EXPERIENCIA*EXPERIENCIA*EXPERIENICA*EXPERIENCIA*EXPERIENCIA*
+            </h2>
+            <div class="bloquesitos">
+                <article class="bloque1">
+                    <h3>Diseñadora gráfica freelance</h3>
+                    <ul>
+                        <li>Diseño editorial (piezas gráficas, material impreso)</li>
+                        <li>Desarrollo y conceptualización de identidades visuales</li>
+                        <li>Diseño de packaging y aplicaciones de marca</li>
+                        <li>Adaptación de piezas para soportes digitales y gráficos</li>
+                        <li>Trabajo directo con clientes y seguimiento de proyecto</li>
+                    </ul>
+                </article>
 
-            <article class="bloque2">
-                <h3>Ayudante de cátedra- Espacio Tipográfico II</h3>
+                <article class="bloque2">
+                    <h3>Ayudante de cátedra- Espacio Tipográfico II</h3>
 
-                <ul>
-                    <li>Apoyo pedagógico a estudiantes universitarios</li>
-                    <li>Colaboración en clases teóricas y prácticas</li>
-                    <li>Corrección de trabajos y evaluaciones académicas</li>
-                    <li>Participación en reuniones de planificación docente</li>
-                    <li>Seguimiento de las actividades académicas</li>
-                </ul>
-            </article>
+                    <ul>
+                        <li>Apoyo pedagógico a estudiantes universitarios</li>
+                        <li>Colaboración en clases teóricas y prácticas</li>
+                        <li>Corrección de trabajos y evaluaciones académicas</li>
+                        <li>Participación en reuniones de planificación docente</li>
+                        <li>Seguimiento de las actividades académicas</li>
+                    </ul>
+                </article>
 
-            <article class="bloque3">
-                <h3>Asistente de producciones artísticas y eventos sociales</h3>
+                <article class="bloque3">
+                    <h3>Asistente de producción fotográfica</h3>
+                    <ul>
+                        <li>Asistencia en producción fotográfica en eventos</li>
+                        <li>Apoyo técnico y resolución rápida de imprevistos</li>
+                        <li>Manejo de iluminación constante</li>
+                        <li>Preparación de equipos, iluminación y montaje</li>
+                        <li>Coordinación con fotógrafos durante eventos</li>
+                    </ul>
+                </article>
 
-                <ul>
-                    <li>Asistencia en producción fotográfica en eventos</li>
-                    <li>Apoyo técnico y resolución de imprevistos</li>
-                    <li>Corrección de trabajos y evaluaciones académicas</li>
-                    <li>Preparación de equipos, iluminación y montaje</li>
-                    <li>Coordinación con fotógrafos durante eventos</li>
-                </ul>
-            </article>
-
-            <article class="bloque4">
-                <h3>Diseño para redes sociales</h3>
-
-                <ul>
-                    <li>Diseño de piezas gráficas para IG (posts, stories y reels)</li>
-                    <li>Planificación y organización del contenido</li>
-                    <li>Gestión de publicaciones e interacción con la comunidad</li>
-                    <li>Análisis de métricas y optimización de contenido</li>
-                </ul>
-            </article>
-
+                <article class="bloque4">
+                    <h3>Diseño para redes sociales</h3>
+                    <ul>
+                        <li>Diseño de piezas gráficas para IG (posts, stories y reels)</li>
+                        <li>Planificación y organización del contenido</li>
+                        <li>Gestión de publicaciones e interacción con la comunidad</li>
+                        <li>Análisis de métricas y optimización de contenido</li>
+                        <li>Desarrollo lineamientos estéticos para la marca</li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
     <!--Acá va un footer-->
     <footer>
-        <p>BEHANCE</p>  <!--mirate el último video que compartimos por campus virtual sobre etiquetas a para hacer links a páginas externas para que esto funcione -->
-        <p>INSTAGRAM</p>
-        <p>LINKEDIN</p>
+        <div class="redes-sociales">
+            <a href="https://www.behance.net/agustinaquiroga4" target="_blank" rel="noopener noreferrer">BEHANCE</a>
+            <a href="https://www.instagram.com/aguspintha?igsh=MWV0djR2d2cwcm5jMA%3D%3D" target="_blank"
+                rel="noopener noreferrer">INSTAGRAM</a>
+            <a href="https://www.linkedin.com/in/agustina-quiroga-1aa170356/" target="_blank"
+                rel="noopener noreferrer">LINKEDIN</a>
+        </div>
     </footer>
 </body>
 
