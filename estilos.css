@@ -118,11 +118,11 @@ nav a {
 .nombre {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-start; /* no produce cambios */
+    align-items: flex-start; /* no produce cambios */
     gap: 80px;
     padding: 80px 10%;
-    background-color: black;
+    background-color: black; /* no repitas! */
 }
 
 .columnainfoprincipal {
@@ -139,7 +139,7 @@ nav a {
     font-size: 24px;
     flex: 0 0 auto;
     align-self: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 0; /* no repitas! */
     padding: 20px 30px;
     width: fit-content;
     color: black;
@@ -172,13 +172,13 @@ nav a {
     margin: 0;
 }
 
-.columnadatosedu {
+.columnadatosedu { /* casi ninguna de estas propiedades está funcionando, revisalas con el inspector */
     display: flex;
     flex-direction: column;
     flex: 0 0 300px;
     margin-top: auto;
     align-self: flex-end;
-    padding-bottom: 0;
+    padding-bottom: 0; /* no repitas!! */
 }
 
 
@@ -186,7 +186,7 @@ nav a {
     color: white;
     font-family: 'EncodeSans Bold';
     font-size: 18px;
-    margin-top: 0;
+    margin-top: 0; /* no repitas!! */
     margin-bottom: 15px;
 }
 
@@ -230,7 +230,7 @@ nav a {
 .experiencias h2 {
     width: 100%;
     text-align: center;
-    color: rgb(243, 165, 187);
+    color: rgb(243, 165, 187); /* no repitas!! */
     border-top: 2px solid rgb(243, 165, 187);
     border-bottom: 2px solid rgb(243, 165, 187);
     padding: 20px 0;
@@ -238,7 +238,7 @@ nav a {
     font-size: 30px;
 }
 
-.bloquesitos {
+.bloquesitos { /* guarda que estás repitiendo esto en la 211 que ya habías declarado casi lo mismo */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -249,14 +249,14 @@ nav a {
 }
 
 .experiencias article {
-    display: flex;
+    display: flex; /* al tener elementos en columna y no tener muchos elementos no hace falta que apliques propiedades de flex */
     flex-direction: column;
     justify-content: flex-start;
     background-color: rgb(243, 165, 187);
     color: black;
     padding: 30px 50px;
-    margin: 0;
-    margin-left: 0;
+    margin: 0; /* no repitas!! */
+    margin-left: 0; /* no repitas!! */
     width: 24%;
     min-width: 200px;
     min-height: 200px;
@@ -288,10 +288,10 @@ footer {
     background-color: rgb(243, 165, 187);
     width: 100%;
     padding: 20px;
-    padding-top: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 45px; /* unificá los paddings para que quede más prolijo en un solo renglón */
+    display: flex; /* no está produciendo cambios */
+    justify-content: center; /* no está produciendo cambios */
+    align-items: center; /* no está produciendo cambios */
     margin-top: 50px;
     margin-bottom: 10px;
 }
@@ -301,17 +301,17 @@ footer {
     flex-direction: row;
     gap: 50px;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: center; /* no está produciendo cambios */
+    height: 100%; /* no tiene sentido que una altura esté al 100% porque una página web no tiene un alto fijo y por ende no tiene una relación para calcular un porcentaje, es infinito, y también si sacás esto no produce cambios */
 }
 
 .redes-sociales a {
     text-decoration: none;
     color: black;
-    font-family: 'EncodeSans Regular', sans-serif;
-    padding-top: 0;
+    font-family: 'EncodeSans Regular', sans-serif; /* no repitas! esto ya lo declaraste en el body */
+    padding-top: 0; /* no repitas! */
     padding-bottom: 25px;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* es correcto que al texto le apliques uppercase para que aparezca en mayúsculas, pero si lo hacés tenés que poner los textos en minúscula. Esto es un buen uso de accesibilidad porque los lectores de pantalla para personas con visión reducida necesitan de la herramienta, y si está escrito en mayúsculas va a deletrear esta palabra, en cambio, si está en minúscula con apariencia uppercase, va a leer la palabra bien aunque parezca estar en mayúsculas. Cambiá el html */
     line-height: 1;
 }
