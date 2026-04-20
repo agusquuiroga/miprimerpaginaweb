@@ -7,7 +7,7 @@
     font-family: "EncodeSans Light";
     src: url("fonts/EncodeSans-Light.ttf") format("truetype");
     font-weight: 200;
-    font-style: light;
+    font-style: normal;
 }
 
 @font-face {
@@ -62,8 +62,6 @@ body {
     font-family: 'EncodeSans Light';
 }
 
-
-
 /* header*/
 
 header {
@@ -97,9 +95,16 @@ nav ul {
     list-style: none;
 }
 
+nav ul :hover {
+    display: flex;
+    gap: 30px;
+    color: rgb(243, 165, 187);
+    list-style: none;
+}
+
 nav a {
     text-decoration: none;
-    color: rgb(243, 165, 187);
+    color: aliceblue;
     font-size: 14px;
     font-weight: bold;
 }
@@ -118,51 +123,40 @@ nav a {
 .nombre {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 80px;
+    justify-content: space-between;
+    gap: 50px;
     padding: 80px 10%;
-    background-color: black;
+    align-items: flex-start;
 }
 
-.columnainfoprincipal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex: 1;
-    max-width: 800px;
+.columna-nombre-nuevo {
+    flex: 0 0 auto;
 }
 
 .cajitanombre {
     background-color: rgb(243, 165, 187);
     font-size: 24px;
-    flex: 0 0 auto;
-    align-self: flex-start;
-    margin-bottom: 0;
     padding: 20px 30px;
     width: fit-content;
     color: black;
+}
 
-
+.columnainfoprincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 550px;
 }
 
 .columnainfoprincipal img {
-    flex: 0 0 auto;
-    align-self: flex-start;
-    margin-bottom: 0;
     width: 200px;
     height: 220px;
     object-fit: cover;
-    flex: 0 0 auto;
-    align-self: flex-start;
 }
 
 .presentación {
-    flex: 1 1 100%;
-    margin-left: 264px;
-    max-width: 550px;
-    margin-top: 15px;
+    margin-top: 0;
 }
 
 .presentación p {
@@ -175,18 +169,15 @@ nav a {
 .columnadatosedu {
     display: flex;
     flex-direction: column;
-    flex: 0 0 300px;
-    margin-top: auto;
-    align-self: flex-end;
-    padding-bottom: 0;
+    flex: 1;
+    gap: 25px;
+    padding-top: 240px;
 }
-
 
 .columnadatosedu h2 {
     color: white;
-    font-family: 'EncodeSans Bold';
+    font-family: 'Encode Sans Bold', sans-serif;
     font-size: 18px;
-    margin-top: 0;
     margin-bottom: 15px;
 }
 
@@ -197,17 +188,24 @@ nav a {
 }
 
 /* Habilidades */
+.iconoshabilidades {
+    display: flex;
+    gap: 10px;
+}
+
 .iconoshabilidades span {
-    border: 1px solid rgb(243, 165, 187);
-    border-radius: 50%;
+    border: 2px solid rgb(243, 165, 187);
+    border-style: groove;
+    border-radius: 25%;
     width: 35px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 16px;
+    font-style: 'EncodeSans-Bold', sans-serif;
+    font-weight: 700;
     color: rgb(243, 165, 187);
-    font-family: 'Encode Sans Bold';
 }
 
 .bloquesitos {
@@ -230,7 +228,6 @@ nav a {
 .experiencias h2 {
     width: 100%;
     text-align: center;
-    color: rgb(243, 165, 187);
     border-top: 2px solid rgb(243, 165, 187);
     border-bottom: 2px solid rgb(243, 165, 187);
     padding: 20px 0;
@@ -238,30 +235,17 @@ nav a {
     font-size: 30px;
 }
 
-.bloquesitos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-right: 20px;
-    gap: 15px;
-    width: 100%;
-}
-
 .experiencias article {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     background-color: rgb(243, 165, 187);
     color: black;
-    padding: 30px 50px;
+    padding: 50px;
     margin: 0;
     margin-left: 0;
     width: 24%;
     min-width: 200px;
     min-height: 200px;
     flex: 0 1 auto;
-
 }
 
 .experiencias h3 {
@@ -286,14 +270,9 @@ nav a {
 
 footer {
     background-color: rgb(243, 165, 187);
-    width: 100%;
-    padding: 20px;
-    padding-top: 45px;
-    display: flex;
+    padding: 45px 20px;
     justify-content: center;
-    align-items: center;
     margin-top: 50px;
-    margin-bottom: 10px;
 }
 
 .redes-sociales {
@@ -301,16 +280,20 @@ footer {
     flex-direction: row;
     gap: 50px;
     justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
 .redes-sociales a {
     text-decoration: none;
     color: black;
-    font-family: 'EncodeSans Regular', sans-serif;
-    padding-top: 0;
-    padding-bottom: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.redes-sociales :hover {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
     font-size: 20px;
     text-transform: uppercase;
     line-height: 1;
